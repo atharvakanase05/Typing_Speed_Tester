@@ -1,4 +1,5 @@
-body {
+
+body{
     font-family: 'Arial', sans-serif;
     text-align: center;
     margin: 0;
@@ -13,62 +14,51 @@ body {
     animation: gradientBG 8s ease infinite;
 }
 
-@keyframes gradientBG {
+@keyframes gradientBG{
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
 
-h1 {
+
+h1{
     color: #D9C8B2;
     font-size: 2.8rem;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-#quote-container {
+
+#quote-container{
     background: rgba(217, 200, 178, 0.9);
     padding: 20px;
     width: 80%;
     max-width: 800px;
     border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     font-size: 22px;
     font-weight: bold;
-    transition: transform 0.3s ease;
 }
 
-#quote-container:hover {
-    transform: scale(1.07);
-}
-
-#input-container {
+#input-container{
     margin-top: 20px;
     width: 80%;
     max-width: 800px;
-    display: flex;
-    justify-content: center;
-    gap: 12px;
 }
 
-#input {
-    flex: 1;
+#input{
+    width: 100%;
     padding: 14px;
     font-size: 20px;
     border: 3px solid #25351A;
     border-radius: 10px;
-    outline: none;
     background: #D9C8B2;
     color: #0D130A;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-#input:focus {
-    border-color: #364926;
-    box-shadow: 0 0 10px rgba(54, 73, 38, 0.8);
+#button-container{
+    margin-top: 12px;
 }
 
-button {
+button{
     padding: 14px 24px;
     font-size: 20px;
     font-weight: bold;
@@ -77,18 +67,18 @@ button {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease;
+    margin: 5px;
 }
 
-button:hover {
+button:hover{
     background: #25351A;
-    transform: scale(1.1);
 }
 
-#result-container {
+/* Result Display */
+#result-container{
     margin-top: 20px;
     font-size: 24px;
     font-weight: bold;
     color: #D9C8B2;
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+    display: none;
 }
