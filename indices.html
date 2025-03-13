@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Tester</title>
+    <link rel="stylesheet" href="beautiful.css">
+</head>
+<body>
+    <h1>Typing Speed Tester</h1>
+    <div id="quote-container">
+        <p id="quote"></p>
+    </div>
+    <div id="input-container">
+        <input type="text" id="input" placeholder="Start typing here..." oninput="checkTyping()">
+        <button onclick="restartTest()">Restart</button>
+    </div>
+    <div id="result-container">
+        <p id="wpm"></p>
+        <p id="accuracy"></p>
+    </div>
+    
+    <script src="logic.js"></script>
+</body>
+</html>
